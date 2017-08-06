@@ -1,0 +1,24 @@
+ <div>
+      
+      <div class="formRow">
+        <label for="isIdGen"> Is IdGen Same: </label>
+         <input type="checkbox" id="isIdGen" [(ngModel)]="isIdgenSame"  />  
+      </div>
+      <div class="formRow">
+          <label for="SourceEnv"> SourceEnv:</label>
+           <input type ="text" maxlength="10" id="SourceEnv" [(ngModel)]="sourceEnv"/>
+      </div>
+     <div class="formRow">
+        <label for="TargetEnv"> TargetEnv:</label>
+      <input type ="text" maxlength="10" id="TargetEnv" [(ngModel)]="tarrgetEnv"/>
+     </div>
+    <div class="formRow">
+       <label for="typeBase">Migration by Item Type:</label>
+       <input type ="checkbox" id="typeBase" [(ngModel)]="migrationByItemType"/>
+    </div>
+    <div class="formRow">
+       <label for="ItemId">ItemId:</label>
+      <input type="text"  id="ItemId" [(ngModel)]="itemId"/>
+     </div>
+       
+   </div>

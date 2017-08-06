@@ -1,0 +1,16 @@
+<div class="block">
+	INFRA:
+		<select id="infraId" >
+			  <option   *ngFor="let infraObj of infraIds" value="{{infraObj.infraId}}"  >
+                  {{infraObj.infraName}}
+              </option>	 
+		</select>
+</div>
+<div class="block">
+    PARTNER:
+        <select id="clientId" >
+			  <option   *ngFor="let clientDto of clientIds"  value="{{clientDto.clientId}}" >
+                  {{clientDto.clientName}}
+              </option>	 
+		</select>
+</div>		 

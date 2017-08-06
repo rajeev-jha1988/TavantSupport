@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box; 
+  }
+  body {
+    min-height: 100vh;
+    background: #D7E8D4;
+    margin: 0;
+  }
+ .formRow {
+    display: flex;
+    padding: 5px; /* Add some padding */
+    flex-direction: row;
+    flex: 5;
+    }
+ .formColumn {
+    display: flex;
+     flex-direction: column;
+     flex: 5;
+    }
+  .formBase{
+       padding: 5px; /* Add some padding */
+    }
+header, footer {
+    background: #D7E8D4;
+    height: 20vh;
+    padding: 10px;
+  }
+.block {
+  width: 100px;
+  float: left;
+}
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+
+}
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+.vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
