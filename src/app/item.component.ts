@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-
+import {ItemService} from './itemMigartionService.component'
 @Component({
     selector:'migrationForm',
      templateUrl: './item.component.html'
+    
     
 })
 export class ItemMigration{
@@ -11,4 +12,11 @@ export class ItemMigration{
  tarrgetEnv:String;
  migrationByItemType:boolean;
  itemId:String; 
+ 
+ constructor (private itemService :ItemService){
+
+ }
+
+
+ 
 }

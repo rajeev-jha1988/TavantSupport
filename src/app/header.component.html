@@ -1,6 +1,6 @@
 <div class="block">
 	INFRA:
-		<select id="infraId" >
+		<select id="infraId"  (change)="onChangeInfra($event.target.value)"    >
 			  <option   *ngFor="let infraObj of infraIds" value="{{infraObj.infraId}}"  >
                   {{infraObj.infraName}}
               </option>	 
@@ -8,7 +8,7 @@
 </div>
 <div class="block">
     PARTNER:
-        <select id="clientId" >
+        <select id="clientId" (change)="onChangeClient($event.target.value)"  >
 			  <option   *ngFor="let clientDto of clientIds"  value="{{clientDto.clientId}}" >
                   {{clientDto.clientName}}
               </option>	 

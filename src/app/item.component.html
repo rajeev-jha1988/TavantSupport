@@ -20,5 +20,12 @@
        <label for="ItemId">ItemId:</label>
       <input type="text"  id="ItemId" [(ngModel)]="itemId"/>
      </div>
+     <div class="formRow">
+       <label for="ItemId">Start Migration:</label>
+      <button (click)="migrate(this);">
+    Migrate
+     </button>
+     </div>
+       
        
    </div>
